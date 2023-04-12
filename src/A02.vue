@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1 :class="red">{{ name }}</h1>
+    <h1 v-bind:class="red">{{ name }}</h1>
   </div>
-  <input type="text" :value="name" />
-  <button class="btn btn-primary" @:click="updateName">버튼</button>
+  <input type="text" v-bind:value="name" />
+  <button class="btn btn-primary" v-on:click="updateName">버튼</button>
 </template>
 
 <script>
